@@ -1,0 +1,90 @@
+{
+  "mode": "production",
+  "seed": 20260809,
+  "n_global": 320,
+  "n_boundary": 160,
+  "n_cycles": 40,
+  "fidelity": "production",
+  "n_total": 480,
+  "path50_event_fraction": 0.37916666666666665,
+  "severe80_event_fraction": 0.13125,
+  "features": [
+    "dT_K",
+    "dp_MPa",
+    "t_inj_h",
+    "t_shut_h",
+    "ramp_down_h",
+    "recovery_frac",
+    "SHmax_MPa",
+    "stress_ratio",
+    "Ecement_GPa",
+    "nu_c",
+    "alpha_c_e6",
+    "ft_MPa",
+    "Gc_Jm2",
+    "eta_fat",
+    "Erock_GPa"
+  ],
+  "bounds": {
+    "dT_K": [
+      40.0,
+      105.0
+    ],
+    "dp_MPa": [
+      3.0,
+      12.0
+    ],
+    "t_inj_h": [
+      8.0,
+      48.0
+    ],
+    "t_shut_h": [
+      12.0,
+      72.0
+    ],
+    "ramp_down_h": [
+      0.1,
+      6.0
+    ],
+    "recovery_frac": [
+      0.2,
+      0.9
+    ],
+    "SHmax_MPa": [
+      20.0,
+      40.0
+    ],
+    "stress_ratio": [
+      0.55,
+      0.9
+    ],
+    "Ecement_GPa": [
+      6.0,
+      15.0
+    ],
+    "nu_c": [
+      0.18,
+      0.28
+    ],
+    "alpha_c_e6": [
+      8.0,
+      14.0
+    ],
+    "ft_MPa": [
+      2.0,
+      4.5
+    ],
+    "Gc_Jm2": [
+      40.0,
+      110.0
+    ],
+    "eta_fat": [
+      0.03,
+      0.12
+    ],
+    "Erock_GPa": [
+      15.0,
+      50.0
+    ]
+  }
+}
