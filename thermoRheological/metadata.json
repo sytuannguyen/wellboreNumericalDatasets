@@ -1,0 +1,138 @@
+{
+  "mode": "production",
+  "seed": 20260812,
+  "n_base": 256,
+  "n_cases": 512,
+  "n_states": 71972,
+  "features": [
+    "dT_high_K",
+    "dT_ratio",
+    "dp_high_MPa",
+    "dp_ratio",
+    "hold_h",
+    "gap_h",
+    "ramp_up_h",
+    "ramp_down_h",
+    "wall_reset_h",
+    "recovery_h",
+    "pre_relax_days",
+    "SHmax_MPa",
+    "stress_ratio",
+    "ecc_ratio",
+    "Ecement_GPa",
+    "nu_cement",
+    "alpha_c_e6",
+    "k_cement_WmK",
+    "cap_cement_MJm3K",
+    "rinf",
+    "tau1_h",
+    "tau2_days",
+    "shiftK_K"
+  ],
+  "bounds": {
+    "dT_high_K": [
+      45.0,
+      95.0
+    ],
+    "dT_ratio": [
+      0.35,
+      0.75
+    ],
+    "dp_high_MPa": [
+      3.0,
+      10.0
+    ],
+    "dp_ratio": [
+      0.35,
+      0.8
+    ],
+    "hold_h": [
+      8.0,
+      36.0
+    ],
+    "gap_h": [
+      2.0,
+      36.0
+    ],
+    "ramp_up_h": [
+      0.25,
+      3.0
+    ],
+    "ramp_down_h": [
+      0.25,
+      4.0
+    ],
+    "wall_reset_h": [
+      0.25,
+      4.0
+    ],
+    "recovery_h": [
+      24.0,
+      96.0
+    ],
+    "pre_relax_days": [
+      7.0,
+      180.0
+    ],
+    "SHmax_MPa": [
+      18.0,
+      40.0
+    ],
+    "stress_ratio": [
+      0.55,
+      0.95
+    ],
+    "ecc_ratio": [
+      0.0,
+      0.7
+    ],
+    "Ecement_GPa": [
+      8.0,
+      18.0
+    ],
+    "nu_cement": [
+      0.18,
+      0.28
+    ],
+    "alpha_c_e6": [
+      8.0,
+      14.0
+    ],
+    "k_cement_WmK": [
+      0.7,
+      1.7
+    ],
+    "cap_cement_MJm3K": [
+      1.6,
+      2.6
+    ],
+    "rinf": [
+      0.35,
+      0.8
+    ],
+    "tau1_h": [
+      2.0,
+      36.0
+    ],
+    "tau2_days": [
+      2.0,
+      40.0
+    ],
+    "shiftK_K": [
+      1200.0,
+      4000.0
+    ]
+  },
+  "schema_version": "thermorheo-v2.0-interface-objective-R10",
+  "paired_design": "Each base point appears as low-high (LH) and high-low (HL) with identical scalar inputs and aggregate wall exposure.",
+  "primary_stress_target": "cement_s1_objective_MPa: maximum of interior element-average principal stress and cement-side linearly extrapolated casing-cement/cement-rock interface stresses",
+  "production_fidelity": {
+    "n_casing": 4,
+    "n_cement": 12,
+    "n_rock": 52,
+    "nt": 48,
+    "R": 10.0,
+    "max_step_h": 1.0,
+    "age_steps": 24
+  }
+}
