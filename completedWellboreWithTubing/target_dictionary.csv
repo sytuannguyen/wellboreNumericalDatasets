@@ -1,0 +1,16 @@
+field,role,unit,description
+direct_peak_bulk_util,matched direct model,-,peak maximum-principal tensile utilization in cement
+completion_peak_bulk_util,completion-aware model,-,same target after tubing/A-annulus filtering
+direct_system_util,paired direct model,-,"maximum of bulk, casing-cement and cement-rock utilization"
+completion_system_util,paired completion model,-,"maximum of bulk, casing-cement and cement-rock utilization"
+bias_system_util,paired target,-,direct minus completion-aware system utilization
+ratio_system_util,paired target,-,direct/completion-aware system utilization ratio
+bias_bulk_util,paired target,-,direct minus completion-aware bulk tensile utilization
+bias_cc_util,paired target,-,direct minus completion-aware casing-cement radial tensile utilization
+disagreement_class,paired target,class,"both safe, both failure, direct false alarm, or direct nonconservative"
+completion_thermal_filter_fraction,mechanism,-,fraction of tubing temperature drop transmitted to casing ID
+completion_tau_ann_h,mechanism,h,lumped A-annulus thermal response time
+completion_tau_ann_over_ramp,mechanism,-,annulus thermal timescale / startup-ramp timescale
+completion_tau_control_over_Ptrecovery,mechanism,-,A-annulus control timescale / tubing-pressure recovery timescale
+time_shift_bulk_h,paired target,h,completion-aware minus direct peak-time shift
+post_injection_amplification,completion-aware model,-,post-injection peak minus injection-period peak utilization

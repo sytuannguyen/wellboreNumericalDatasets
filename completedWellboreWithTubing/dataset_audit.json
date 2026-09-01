@@ -1,0 +1,35 @@
+{
+  "archive_version": "completion-aware-surrogate-data-v1.0",
+  "n_full_rows": 1600,
+  "n_quality_pass": 1391,
+  "n_excluded": 209,
+  "sample_region_counts_full": {
+    "global": 800,
+    "transition": 800
+  },
+  "sample_region_counts_quality": {
+    "global": 711,
+    "transition": 680
+  },
+  "quality_pass_fraction": 0.869375,
+  "numerical_fail_count": 155,
+  "pressure_clip_count": 56,
+  "disagreement_class_counts_quality": {
+    "both_safe": 850,
+    "direct_false_alarm": 372,
+    "both_failure": 167,
+    "direct_nonconservative": 2
+  },
+  "negative_system_bias_count_quality": 8,
+  "failure_mode_switch_count_quality": 30,
+  "completion_casing_cement_governing_count_quality": 31,
+  "direct_nonconservative_count_quality": 2,
+  "fine_audit_rows": 8,
+  "configured_audit_n": 32,
+  "known_target_cautions": [
+    "ratio_* targets are unstable when the denominator is zero; do not use them as primary surrogate targets.",
+    "peak_bulk_phase/time are not physically informative when peak bulk utilization is exactly zero because argmax ties select the initial row.",
+    "sample_region is a DOE sampling label, not a physical predictor.",
+    "completion_* mechanism columns are solver outputs and must not be used as deployable surrogate inputs."
+  ]
+}

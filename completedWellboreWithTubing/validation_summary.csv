@@ -1,0 +1,7 @@
+test,rel_L2,pass_,rel_span,tau_h,max_abs_MPa,temp_rel,pressure_rel,util_rel,coarse,medium,fine,medium_fine_rel
+bonded_Lame_mechanics,2.5327167695972116e-05,True,,,,,,,,,,
+direct_wall_steady_heat,,True,5.723418648813095e-06,,,,,,,,,
+annulus_RC_limit,,True,0.008812779801544934,0.4091254435209489,,,,,,,,
+sealed_annulus_pressure_identity,,True,,,1.5997869695638656e-11,,,,,,,
+completion_to_direct_limit,,True,,,,4.2190746000869694e-05,1.1666815661707611e-11,0.00011674698783820224,,,,
+mesh_time_convergence,,True,,,,,,,0.1534684122612,0.1228461344389,0.1182413509999,0.03894393458853396
